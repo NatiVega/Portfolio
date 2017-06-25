@@ -1,10 +1,10 @@
-* {
+/* {
 	padding: 0;
 	margin: 0;
-}
+}*/
 
 body {
-	font-family: 'Fauna One', serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -28,7 +28,7 @@ h1 {
 	color: white;
 	text-align: center;
 	margin-top: 4%;
-	font-size: 312.5%;
+	font-size: 250%;
 }
 
 
@@ -110,7 +110,7 @@ h1 .logo {
 }
 
 #home {
-	background: url("images/home-background-image.jpg") no-repeat;
+	background: url("../images/home-background-image.jpg") no-repeat;
 	width: 100%;
 	background-size: cover;
 }
@@ -178,7 +178,7 @@ h1 .logo {
 	margin-right: 10px;
 }
 
-.twitter {
+/*.twitter {
 	border-color: #55acee;
 }
 
@@ -195,7 +195,7 @@ h1 .logo {
 .linkedin:hover {
 	background-color: #0077b5;
 	transition: background-color .4s;
-}
+}*/
 
 
 #about .info {
@@ -399,7 +399,7 @@ h1 .logo {
 
 
 #contact {
-	background: url("images/Atlanta-GoogleMap.jpg") no-repeat;
+	background: url("../images/Atlanta-GoogleMap.jpg") no-repeat;
 	background-size: cover;
 	clear: both;
 }
@@ -477,9 +477,17 @@ h1 .logo {
 	margin-bottom: 20px;
 }
 
+
+.responsive-image {
+		border-radius: 50%;
+  		height: auto;
+	}
+
+
+
 /* Media Queries */
 
-@media screen and (max-width: 1200px) {
+ @media screen and (max-width: 1200px) {
 	#portfolio [class^="col"] section {
 		width: 80%;
 		margin-right: auto;
@@ -504,6 +512,12 @@ h1 .logo {
 	 left: -240px;
 	 position: relative;
 	}
+
+	.responsive-image {
+		border-radius: 50%;
+  		height: auto;
+	}
+
 }
 
 @media screen and (max-width: 790px) {
@@ -556,6 +570,11 @@ h1 .logo {
 
 	#contact textarea {
 		width: 90%;
+	}
+
+	.responsive-image {
+		border-radius: 50%;
+  		height: auto;
 	}
 }
 
@@ -619,6 +638,12 @@ h1 .logo {
 	#portfolio .heading span {
 		display: none;
 	}
+
+	.responsive-image {
+		border-radius: 50%;
+  		height: auto;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -636,8 +661,10 @@ h1 .logo {
 		font-size: 300%;
 	}
 
-	#about img {
-		width: 60%;
+
+	.responsive-image {
+		border-radius: 50%;
+  		height: auto;
 	}
 
 	#skill-set #web-development-skills::before {
